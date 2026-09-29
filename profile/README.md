@@ -7,6 +7,12 @@
 
 ---
 
+## Watch: Different Minds in 60 seconds
+
+https://github.com/user-attachments/assets/c867214b-094d-4696-bfa5-3c740c0c4561
+
+<sub>Narrated, with sound. Built with HyperFrames on Omarchy. Concept by Lee Shand.</sub>
+
 ## The mission
 
 **Omarchy for Different Minds** makes the Linux desktop adapt to the brain in front of it, instead of asking that brain to adapt to the machine.
