@@ -1,0 +1,11 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+body { width:800px; height:800px; }
+.frame { inset:40px; border:2px solid rgba(53,242,255,.5); clip-path:polygon(60px 0,100% 0,100% calc(100% - 60px),calc(100% - 60px) 100%,0 100%,0 60px); }
+.dm { position:absolute; left:0; right:0; bottom:120px; text-align:center; font-size:150px; font-weight:800; letter-spacing:.08em; }
+</style></head><body>
+<canvas id="c" width="800" height="800"></canvas><div class="scan"></div><div class="frame"></div>
+<div class="dm grad">DM</div>
+<script src="threads.js"></script>
+<script>drawThreads({w:800,h:800,x0:70,x1:730,nodeX:420,nodeY:300,spread:230,n:18,top:110,bot:480,fade:.25,seed:11});</script>
+</body></html>

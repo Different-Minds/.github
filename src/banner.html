@@ -1,0 +1,24 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+body { width:1600px; height:640px; }
+.tag { position:absolute; top:48px; left:60px; }
+.title { position:absolute; left:640px; top:150px; font-size:92px; line-height:1; }
+.title .l2 { display:block; margin-top:10px; }
+.sub { position:absolute; left:646px; top:372px; display:flex; align-items:center; gap:18px; font-size:26px; letter-spacing:.2em; color:var(--mid); text-transform:uppercase; }
+.sub .logo { width:250px; height:58px; }
+.line { position:absolute; left:646px; top:460px; width:880px; font-size:20px; line-height:1.55; color:var(--mid); }
+.line em { font-style:normal; color:var(--amber); }
+.lbl { position:absolute; bottom:52px; font-size:13px; letter-spacing:.3em; }
+.foot { position:absolute; right:60px; bottom:48px; font-size:13px; letter-spacing:.2em; color:var(--dim); }
+</style></head><body>
+<canvas id="c" width="1600" height="640"></canvas><div class="scan"></div><div class="frame"></div>
+<div class="tag">// COGNITIVE ACCESSIBILITY <b>·</b> BUILT ON OMARCHY <b>·</b> LOCAL-FIRST</div>
+<div class="title h"><span class="grad">Different</span><span class="l2 grad">Minds</span></div>
+<div class="sub">for <div class="logo"></div></div>
+<div class="line">What unnecessary work is the computer asking the human brain to do? <em>We find it. Then we take it away.</em></div>
+<div class="lbl c-mag" style="left:64px">50 TABS OPEN</div>
+<div class="lbl c-cyan" style="left:420px">ONE THREAD</div>
+<div class="foot">github.com/different-minds</div>
+<script src="threads.js"></script>
+<script>drawThreads({w:1600,h:640,x0:40,x1:1600,nodeX:520,nodeY:320,spread:240,top:70,bot:570,fade:.02});</script>
+</body></html>
