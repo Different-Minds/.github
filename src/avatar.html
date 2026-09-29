@@ -1,11 +1,37 @@
 <!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
 <style>
-body { width:800px; height:800px; }
-.frame { inset:40px; border:2px solid rgba(53,242,255,.5); clip-path:polygon(60px 0,100% 0,100% calc(100% - 60px),calc(100% - 60px) 100%,0 100%,0 60px); }
-.dm { position:absolute; left:0; right:0; bottom:120px; text-align:center; font-size:150px; font-weight:800; letter-spacing:.08em; }
+body { width:800px; height:800px; background:#05060a; }
 </style></head><body>
-<canvas id="c" width="800" height="800"></canvas><div class="scan"></div><div class="frame"></div>
-<div class="dm grad">DM</div>
-<script src="threads.js"></script>
-<script>drawThreads({w:800,h:800,x0:70,x1:730,nodeX:420,nodeY:300,spread:230,n:18,top:110,bot:480,fade:.25,seed:11});</script>
+<canvas id="c" width="800" height="800"></canvas>
+<script>
+// Bold mark that survives a 40px render: three thick tangled strokes on the left
+// knot into one glowing node, and leave as three clean parallel bars.
+const c = document.getElementById('c').getContext('2d');
+c.translate(400, 400); c.scale(.86, .86); c.translate(-360, -400);
+const cols = ['#ff3ea5', '#35f2ff', '#9b8cff'];
+const nx = 400, ny = 400;
+const tangles = [
+  [[90,250],[260,110],[60,420],[240,560],[150,300]],
+  [[110,560],[300,640],[40,330],[280,200],[180,470]],
+  [[70,400],[230,300],[120,640],[320,470],[210,330]],
+];
+tangles.forEach((pts, i) => {
+  const outY = ny - 110 + i * 110;
+  c.beginPath(); c.moveTo(...pts[0]);
+  for (let k = 1; k < pts.length; k++) {
+    const [px, py] = pts[k - 1], [x, y] = pts[k];
+    c.bezierCurveTo(px + 120, py - 90, x - 120, y + 90, x, y);
+  }
+  const [lx, ly] = pts[pts.length - 1];
+  c.bezierCurveTo(lx + 120, ly, nx - 90, ny, nx, ny);
+  c.bezierCurveTo(nx + 70, ny, nx + 50, outY, nx + 150, outY);
+  c.lineTo(740, outY);
+  c.strokeStyle = cols[i]; c.lineWidth = 26; c.lineCap = 'round'; c.lineJoin = 'round';
+  c.shadowColor = cols[i]; c.shadowBlur = 30; c.stroke();
+});
+c.shadowColor = '#35f2ff'; c.shadowBlur = 60; c.fillStyle = '#eaffff';
+c.beginPath(); c.arc(nx, ny, 44, 0, 7); c.fill();
+c.shadowBlur = 0; c.strokeStyle = '#35f2ff'; c.lineWidth = 10;
+c.beginPath(); c.arc(nx, ny, 80, .5, 5.8); c.stroke();
+</script>
 </body></html>
