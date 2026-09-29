@@ -17,7 +17,7 @@ https://github.com/user-attachments/assets/c867214b-094d-4696-bfa5-3c740c0c4561
 
 **Omarchy for Different Minds** makes the Linux desktop adapt to the brain in front of it, instead of asking that brain to adapt to the machine.
 
-It is for people living with **Parkinson's, ADHD, autism, memory problems, executive-function difficulties, motor challenges, cognitive fatigue**, or simply brains that work differently. Not a "disabled edition". Not a walled garden. A real computer that quietly takes on the work it never should have handed to you.
+It is for anyone whose cognition makes the computer harder than it should be: people living with **Parkinson's, Alzheimer's and other dementias, mild cognitive impairment, brain injury and stroke, ADHD, autism, memory problems, executive-function difficulties, motor challenges, cognitive fatigue**, or simply brains that work differently. Not a "disabled edition". Not a walled garden. A real computer that quietly takes on the work it never should have handed to you.
 
 We start from one question:
 
@@ -36,6 +36,14 @@ Lee Shand has Parkinson's. He has ideas constantly. What costs him is not the th
 > *"A system that works only while I remember every command I typed yesterday is not accessible technology. It is a temporary hobby with excellent branding."*
 
 Different Minds takes what works for one brain and turns it into something any brain can switch on.
+
+## Two reasons, one project
+
+Different Minds started as **Lee's idea, for Parkinson's**: a way back to the ideas that were always there.
+
+It is also for **Alzheimer's and dementia**. Memory loss is the far end of the same problem: a computer that assumes you remember where things are, what you changed, and what you meant to do next. For someone living with dementia, and for the family helping them, that assumption shuts the door. Different Minds is built to keep it open for as long as possible.
+
+That adds one design rule for later stages: **a trusted helper** (a son, a daughter, a spouse) can set things up *for* the person, simplify the screen, and leave them notes, but never lock them out and never watch them. The person stays at the centre.
 
 ## The eight design laws
 
