@@ -45,6 +45,8 @@ It is also for **Alzheimer's and dementia**. Memory loss is the far end of the s
 
 That adds one design rule for later stages: **a trusted helper** (a son, a daughter, a spouse) can set things up *for* the person, simplify the screen, and leave them notes, but never lock them out and never watch them. The person stays at the centre.
 
+> *Also built for my dad, who is living with Alzheimer's.* Fred
+
 ## The eight design laws
 
 <p align="center"><img src="assets/principles.png" alt="Eight design laws" width="100%"></p>
